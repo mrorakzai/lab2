@@ -10,7 +10,7 @@ on:
       custom-message:
         required: true
         type: string
-        description: "enter a custom message"
+        description: "Enter a custom message"
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 'Printing Custom Message'
-      run: echo ${{ github.event.inputs.custom-message }}
+      run: echo ${{ inputs.custom-message }}
 
